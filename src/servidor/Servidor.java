@@ -12,7 +12,10 @@ public class Servidor {
     public static boolean saveLogs = true;
 
     public static void main(String[] args) throws IOException {
-        if (saveLogs) System.out.println("Guardado de logs habilitado"); else System.out.println("Guardado de logs deshabilitado");
+        if (saveLogs) 
+            System.out.println("Guardado de logs habilitado"); 
+        else 
+            System.out.println("Guardado de logs deshabilitado");
         
         //Creamos el socket para escuchar las conexiones entrantes
         ServerSocket ss = new ServerSocket(PUERTO);
